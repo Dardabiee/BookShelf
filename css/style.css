@@ -1,0 +1,192 @@
+ body {
+  font-family: Raleway, sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.header {
+  background: #30c1e2;
+  padding: 16px;
+  color: white;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.wrapper .container {
+  width: 1024px;
+  border-radius: 8px;
+  margin: 15px;
+  border: 2px solid #30c1e2;
+  padding: 16px;
+  
+}
+ .second-container {
+  width: 1024px;
+  border-radius: 8px;
+  margin: 16px;
+  border: 2px solid black;
+  padding: 16px;
+  
+}
+
+
+.item {
+  border-radius: 16px;
+  margin-top: 16px;
+  padding: 12px 24px 12px 24px;
+  background: white;
+  display: flex;
+  align-items: center;
+}
+
+.item > .inner h2 {
+  margin-bottom: unset;
+}
+
+.item > .inner p {
+  margin-top: 5px;
+}
+
+.form {
+  display: flex;
+  padding: 16px;
+  flex-direction: column;
+  height: 300px;
+  border-radius: 16px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-group label {
+  margin-bottom: 4px;
+  font-size: 18px;
+  font-weight: lighter;
+}
+
+.shadow {
+  box-shadow: 0 5px 10px rgba(2, 14, 62, 0.05), 0 15px 40px rgba(166, 173, 201, .2);
+}
+
+input[type=text], input[type=number] {
+  
+  background: #e9e9e9;
+  border: 2px solid #4a4658;
+  border-radius: 8px;
+  padding: 16px;
+  box-sizing: border-box;
+  margin-bottom: 8px;
+  font-size: 24px;
+}
+
+.btn-submit {
+  width: 11rem;
+  height: auto;
+  border-radius: 16px;
+  margin-top:1rem;
+  padding: 10px 20px;
+  border: 2px solid #4a4658;
+  color: black;
+  font-size: 17px;
+  
+  cursor: pointer;
+}
+
+.btn-submit:hover {
+  background: #30c1e2;
+  letter-spacing: 1.3px;
+}
+
+input[type=text], input[type=number], .btn-submit:focus {
+  outline: none;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.form-title {
+  margin: auto 0;
+}
+
+.check-button {
+  color: rgb(0, 0, 0);
+  background-color: #ffffff;
+  width: 5rem;
+  height: 5rem;
+  margin-left: auto;
+  cursor: pointer;
+  border: none;
+}
+.check-button i{
+  font-size: 2.5rem;
+}
+
+.check-button i:hover {
+font-size: 2.7rem;
+color: #30c1e2;
+}
+
+.trash-button {
+  color: rgb(0, 0, 0);
+  background-color: #ffffff;
+  width: 5rem;
+  height: 5rem;
+  margin-left: auto;
+  cursor: pointer;
+  border: none;
+}
+.trash-button i{
+  font-size: 2.5rem;
+}
+
+.trash-button:hover {
+ color: red;
+ font-size: 2.7rem;
+}
+.undo-button {
+  background: none;
+  width: 40px;
+  height: 40px;
+  margin-left: auto;
+  cursor: pointer;
+  border: none;
+}
+.undo-button i {
+  font-size: 2.5rem;
+}
+.undo-button:hover {
+  font-size: 2.7rem;
+}
+.check-button:focus, .trash-button {
+  outline: none;
+}
+#inputBookIsComplete{
+  margin: 10px;
+  align-self: flex-end;
+
+}
+@media only screen and (max-width: 756px) {
+  .wrapper {
+      margin: 0;
+  }
+
+  .wrapper .container {
+      width: 100%;
+  }
+
+  .list-item {
+      width: 100%;
+  }
+
+  .form .form-group {
+      width: 100%;
+  }
+}
